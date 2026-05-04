@@ -1,132 +1,157 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Hillian Trent LLC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* BACKGROUND ANIMATION */
+body {
+    margin:0;
+    font-family:-apple-system, Arial;
+    background: linear-gradient(270deg, #0b0f1a, #0f172a, #1e3a8a);
+    background-size: 600% 600%;
+    animation: gradientMove 15s ease infinite;
+}
+
+/* gradient movement */
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* subtle glow effect */
+.glow {
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(59,130,246,0.2), transparent);
+    filter: blur(80px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.glow2 {
+    position:absolute;
+    right:0;
+    top:200px;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(34,197,94,0.15), transparent);
+    filter: blur(80px);
+    animation: float 12s ease-in-out infinite;
+}
+
+/* floating motion */
+@keyframes float {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-40px);}
+    100% {transform: translateY(0px);}
+}
+
+.container {
+    position:relative;
+    z-index:2;
+    max-width:1000px;
+    margin:100px auto;
+    padding:20px;
+}
+
+.card {
+    background:white;
+    border-radius:20px;
+    padding:60px;
+    box-shadow:0 30px 90px rgba(0,0,0,0.4);
+}
+
+h1, h2 {
+    color:#0f172a;
+}
+
+p {
+    color:#334155;
+    line-height:1.9;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.box {
+    background:#f8fafc;
+    padding:20px;
+    border-radius:12px;
+}
+
+.cta {
+    margin-top:60px;
+    padding:35px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+</style>
+
 </head>
 
-<body style="margin:0; font-family:-apple-system, Arial; background:#0b0f1a;">
+<body>
 
-<!-- HERO -->
-<div style="background:radial-gradient(circle at 30% 20%, #1e3a8a, #0b0f1a); padding:110px 20px 130px 20px; text-align:center; color:white;">
-    
-    <h1 style="margin:0; font-size:42px; letter-spacing:1px;">Hillian Trent LLC</h1>
-    
-    <p style="margin-top:14px; font-size:16px; color:#cbd5e1;">
-        Digital Marketing, Content Strategy & Growth Systems
-    </p>
+<!-- GLOW ELEMENTS -->
+<div class="glow"></div>
+<div class="glow2"></div>
 
-    <div style="width:70px; height:3px; background:linear-gradient(90deg,#3b82f6,#22c55e); margin:28px auto 0 auto; border-radius:10px;"></div>
+<div class="container">
 
-</div>
+<div class="card">
 
-<!-- CONTAINER -->
-<div style="max-width:1000px; margin:-90px auto 80px auto; padding:0 20px;">
+<h1>Hillian Trent LLC</h1>
+<p><strong>Digital Marketing, Content Strategy & Growth Systems</strong></p>
 
-<div style="background:white; border-radius:20px; padding:60px; box-shadow:0 30px 90px rgba(0,0,0,0.35);">
-
-<!-- INTRO -->
-<p style="font-size:17px; line-height:1.9; color:#334155;">
+<p>
 Hillian Trent LLC is a private digital services agency focused on the development, optimization, and scaling of high-performance online content ecosystems.
 </p>
 
-<p style="font-size:17px; line-height:1.9; color:#334155;">
-We work with brands and independent creators to design structured growth systems that combine content production, audience acquisition, and monetization into cohesive, repeatable frameworks.
+<p>
+We combine structured content execution with data-driven performance analysis to create scalable growth systems and recurring revenue frameworks.
 </p>
 
-<p style="font-size:17px; line-height:1.9; color:#334155;">
-Our approach integrates creative execution with quantitative analysis, enabling consistent engagement performance and long-term recurring revenue generation across modern digital platforms.
-</p>
+<h2>Core Services</h2>
 
-<!-- SERVICES GRID -->
-<h2 style="margin-top:50px;">Core Services</h2>
-
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:25px; margin-top:25px;">
-
-<div style="background:#f8fafc; padding:25px; border-radius:14px;">
-<strong>Content Strategy & Production</strong><br><br>
-Structured planning and execution of high-performance digital content aligned with platform algorithms and audience behavior.
+<div class="grid">
+<div class="box">Content strategy & production</div>
+<div class="box">Audience growth systems</div>
+<div class="box">Monetization architecture</div>
+<div class="box">Private consulting & brand positioning</div>
 </div>
 
-<div style="background:#f8fafc; padding:25px; border-radius:14px;">
-<strong>Audience Growth Systems</strong><br><br>
-Development of scalable acquisition funnels designed to maximize reach, retention, and engagement consistency.
-</div>
+<h2>Data & Analysis</h2>
 
-<div style="background:#f8fafc; padding:25px; border-radius:14px;">
-<strong>Monetization Architecture</strong><br><br>
-Design and optimization of subscription-based and recurring revenue systems across digital platforms.
-</div>
-
-<div style="background:#f8fafc; padding:25px; border-radius:14px;">
-<strong>Private Client Consulting</strong><br><br>
-Direct advisory services focused on growth strategy, positioning, and operational optimization.
-</div>
-
-</div>
-
-<!-- ANALYTICS SECTION -->
-<h2 style="margin-top:60px;">Data & Performance Analysis</h2>
-
-<p style="color:#334155; line-height:1.9;">
-Our work is supported by internal data analysis processes that evaluate content performance, virality patterns, and audience interaction behavior in real time.
+<p>
+Our internal analysis processes evaluate content virality, engagement behavior, and performance metrics in real time. This allows continuous optimization of distribution strategies and growth efficiency.
 </p>
 
-<p style="color:#334155; line-height:1.9;">
-Dedicated analysis is applied to identify high-performing content structures, optimize distribution timing, and refine engagement strategies based on measurable results.
+<p>
+Brand assessments are conducted to align positioning, audience targeting, and monetization structure within a cohesive system.
 </p>
 
-<p style="color:#334155; line-height:1.9;">
-Brand assessments are conducted to evaluate positioning, audience alignment, and growth potential, ensuring that each client operates within an optimized digital framework.
+<h2>Client Model</h2>
+
+<p>
+We operate on a private client basis. Most engagements are initiated through referrals or direct introductions. Due to confidentiality, no public case studies are displayed.
 </p>
 
-<!-- APPROACH -->
-<h2 style="margin-top:60px;">Operational Approach</h2>
-
-<p style="color:#334155; line-height:1.9;">
-Hillian Trent LLC operates on a highly selective basis, working with a limited number of clients to maintain precision in execution and performance consistency.
-</p>
-
-<p style="color:#334155; line-height:1.9;">
-Each engagement is structured around tailored systems that integrate direct client collaboration with established third-party platform distribution.
-</p>
-
-<p style="color:#334155; line-height:1.9;">
-Our objective is the development of scalable, repeatable processes capable of producing stable growth and predictable revenue outcomes over time.
-</p>
-
-<!-- CLIENT MODEL -->
-<h2 style="margin-top:60px;">Client Model</h2>
-
-<p style="color:#334155; line-height:1.9;">
-The firm operates primarily through private client relationships. Most new engagements are initiated through referrals from existing clients or through direct introductions.
-</p>
-
-<p style="color:#334155; line-height:1.9;">
-Due to the confidential nature of client operations, Hillian Trent LLC does not publicly disclose case studies, performance metrics, or active client portfolios.
-</p>
-
-<!-- CTA -->
-<div style="margin-top:70px; padding:40px; border-radius:18px; background:linear-gradient(135deg,#0f172a,#1e293b); color:white;">
-
-<h3 style="margin-top:0;">Work With Us</h3>
-
-<p style="color:#cbd5e1; line-height:1.8;">
-We accept a limited number of new client engagements. Referral-based introductions are preferred.
-</p>
-
-<p style="font-size:18px;">
-<strong>Email:</strong> info@hilliantrent.com
-</p>
-
+<div class="cta">
+<h3>Work With Us</h3>
+<p>We accept a limited number of new clients. Referral introductions are preferred.</p>
+<p><strong>Email:</strong> info@hilliantrent.com</p>
 </div>
 
 </div>
-</div>
-
-<!-- FOOTER -->
-<div style="text-align:center; color:#64748b; font-size:12px; margin-bottom:40px;">
-Hillian Trent LLC — Registered in Wyoming, USA
 </div>
 
 </body>
